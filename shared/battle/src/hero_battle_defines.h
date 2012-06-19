@@ -9,8 +9,13 @@
 #ifndef cc20test_hero_battle_defines_h
 #define cc20test_hero_battle_defines_h
 
+#include "types.h"
+
 typedef enum {
-    HERO_BA_PHYSICAL_HIT,
+    HERO_BA_PHYSICAL_ATTACK_SINGLE,
+    HERO_BA_PHYSICAL_ATTACK_ROW,
+    HERO_BA_PHYSICAL_ATTACK_COLUMN,
+    HERO_BA_PHYSICAL_ATTACK_ALL,
     HERO_BA_MAGIC_HIT,
 } HeroBattleActionType_t;
 

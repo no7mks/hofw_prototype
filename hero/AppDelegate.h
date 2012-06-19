@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "cocos2d.h"
+#import "HomeScreenViewController.h"
 
 @interface AppController : NSObject <UIApplicationDelegate, CCDirectorDelegate>
 {
@@ -21,4 +22,7 @@
 @property (readonly) UINavigationController *navController;
 @property (readonly) CCDirectorIOS *director;
 
+@property (readonly) HomeScreenViewController *homeController;
 @end
+
+#define HEROAPP ((AppController*)([UIApplication sharedApplication].delegate))

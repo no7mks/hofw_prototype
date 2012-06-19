@@ -7,3 +7,23 @@
 //
 
 #include "hero_battle_action.h"
+
+void HeroBattleAction_c::serialize(ztt::Buffer_c &buf) const
+{
+    buf << actionType
+    << action
+    << unit
+    << param1
+    << param2
+    ;
+}
+
+void HeroBattleAction_c::deserialize(const ztt::Buffer_c &buf)
+{
+    buf >> actionType
+    >> action
+    >> unit
+    >> param1
+    >> param2
+    ;
+}

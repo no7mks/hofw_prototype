@@ -511,7 +511,7 @@ typedef struct _listAddedEntry
 
 		DL_FOREACH_SAFE( mouseDelegates_, entry, tmp ) {
 			if ( entry->flags & kCCImplementsMouseEntered ) {
-				void *swallows = [entry->delegate performSelector:@selector(ccMouseEntered:) withObject:event];
+				void *swallows = [entry->delegate performSelector:@selector(ccMouseExited:) withObject:event];
 				if( swallows )
 					break;
 			}
@@ -526,7 +526,7 @@ typedef struct _listAddedEntry
 
 		DL_FOREACH_SAFE( mouseDelegates_, entry, tmp ) {
 			if ( entry->flags & kCCImplementsMouseExited) {
-				void *swallows = [entry->delegate performSelector:@selector(ccMouseExited:) withObject:event];
+				void *swallows = [entry->delegate performSelector:@selector(ccMouseEntered:) withObject:event];
 				if( swallows )
 					break;
 			}
@@ -663,6 +663,16 @@ typedef struct _listAddedEntry
 		
 		[event release];
 		
+		// Remove possible delegates
+		tListDeletedEntry *dEntry, *tTmp;
+		DL_FOREACH_SAFE( delegatesToBeRemoved_ , dEntry, tTmp ) {
+			
+			[self removeDelegate:dEntry->delegate fromList:dEntry->listToBeDeleted];
+			
+			DL_DELETE( delegatesToBeRemoved_, dEntry );
+			[dEntry->delegate release];
+			free(dEntry);
+		}
 		
 		// Add possible delegates
 		tListAddedEntry *entry, *tmp;
@@ -676,16 +686,6 @@ typedef struct _listAddedEntry
 			free(entry);
 		}
 		
-		// Remove possible delegates
-		tListDeletedEntry *dEntry, *tTmp;
-		DL_FOREACH_SAFE( delegatesToBeRemoved_ , dEntry, tTmp ) {
-			
-			[self removeDelegate:dEntry->delegate fromList:dEntry->listToBeDeleted];
-			
-			DL_DELETE( delegatesToBeRemoved_, dEntry );
-			[dEntry->delegate release];
-			free(dEntry);
-		}
 	}
 }
 

@@ -10,19 +10,24 @@
 
 #import "AppDelegate.h"
 #import "HelloWorldLayer.h"
+#import "HomeScreenViewController.h"
+
+@interface AppController ()
+- (void)onTapped1;
+@end
 
 @implementation AppController
 
 @synthesize window=window_, navController=navController_, director=director_;
+@synthesize homeController=_homeController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	// Create the main window
 	window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-
 	// Create an CCGLView with a RGB565 color buffer, and a depth buffer of 0-bits
-	CCGLView *glView = [CCGLView viewWithFrame:[window_ bounds]
+	CCGLView *glView = [CCGLView viewWithFrame: [window_ bounds]
 								   pixelFormat:kEAGLColorFormatRGB565	//kEAGLColorFormatRGBA8
 								   depthFormat:0	//GL_DEPTH_COMPONENT24_OES
 							preserveBackbuffer:NO
@@ -55,13 +60,15 @@
 		CCLOG(@"Retina Display Not supported");
 
 	// Create a Navigation Controller with the Director
-	navController_ = [[UINavigationController alloc] initWithRootViewController:director_];
-	navController_.navigationBarHidden = YES;
+    _homeController = [[HomeScreenViewController alloc] initWithNibName:nil bundle:nil];
+    
+	navController_ = [[UINavigationController alloc] initWithRootViewController:_homeController];
+	navController_.navigationBarHidden = NO;
 
 	// set the Navigation Controller as the root view controller
 //	[window_ setRootViewController:rootViewController_];
 	[window_ addSubview:navController_.view];
-
+    
 	// make main window visible
 	[window_ makeKeyAndVisible];
 
@@ -70,23 +77,42 @@
 	// You can change anytime.
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
 
-	// When in iPad / RetinaDisplay mode, CCFileUtils will append the "-ipad" / "-hd" to all loaded files
-	// If the -ipad  / -hdfile is not found, it will load the non-suffixed version
-	[CCFileUtils setiPadSuffix:@"-ipad"];			// Default on iPad is "" (empty string)
-	[CCFileUtils setRetinaDisplaySuffix:@"-hd"];	// Default on RetinaDisplay is "-hd"
+	// If the 1st suffix is not found and if fallback is enabled then fallback suffixes are going to searched. If none is found, it will try with the name without suffix.
+	// On iPad HD  : "-ipadhd", "-ipad",  "-hd"
+	// On iPad     : "-ipad", "-hd"
+	// On iPhone HD: "-hd"
+	CCFileUtils *sharedFileUtils = [CCFileUtils sharedFileUtils];
+	[sharedFileUtils setEnableFallbackSuffixes:NO];				// Default: NO. No fallback suffixes are going to be used
+	[sharedFileUtils setiPhoneRetinaDisplaySuffix:@"-hd"];		// Default on iPhone RetinaDisplay is "-hd"
+	[sharedFileUtils setiPadSuffix:@"-ipad"];					// Default on iPad is "ipad"
+	[sharedFileUtils setiPadRetinaDisplaySuffix:@"-ipadhd"];	// Default on iPad RetinaDisplay is "-ipadhd"
 
 	// Assume that PVR images have premultiplied alpha
 	[CCTexture2D PVRImagesHavePremultipliedAlpha:YES];
 
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
 	[director_ pushScene: [HelloWorldLayer scene]]; 
+    
+//    UIButton * button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    [button addTarget:self action:@selector(onTapped1) forControlEvents:UIControlEventTouchUpInside];
+//    button.frame = CGRectMake(0, 0, 100, 200);
+//    [glView addSubview:button];
 
+    
 	return YES;
+}
+
+- (void)onTapped1
+{
+//    HomeScreenViewController * home = [[HomeScreenViewController alloc] initWithNibName:nil bundle:nil];
+////    [[CCDirector sharedDirector].view addSubview:home.view];
+//    [HEROAPP.navController pushViewController:home animated:YES];
 }
 
 // Supported orientations: Landscape. Customize it for your own needs
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+//    return YES;
 	return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
@@ -139,6 +165,7 @@
 {
 	[window_ release];
 	[navController_ release];
+    [_homeController release];
 
 	[super dealloc];
 }

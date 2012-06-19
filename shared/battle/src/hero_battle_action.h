@@ -10,12 +10,21 @@
 #define cc20test_hero_battle_action_h
 
 #include "hero_battle_defines.h"
-#include "hm_types.h"
+#include <list>
 
-class HeroBattleAction_c
+#include "buffer.h"
+class HeroBattleAction_c : public ztt::Bufferable_c
 {
 public:
-    uint8_t 
+    uint8_t actionType;
+    uint32_t action;
+    uint32_t unit;
+    int32_t param1;
+    int32_t param2;
+
+public:
+    virtual void serialize(ztt::Buffer_c& buf) const;
+    virtual void deserialize(const ztt::Buffer_c& buf);
 };
 
 #endif
