@@ -9,6 +9,9 @@
 #import "HomeScreenViewController.h"
 #import "AppDelegate.h"
 
+
+#import "HeroBattleFieldScene.h"
+
 @interface HomeScreenViewController ()
 
 @end
@@ -48,5 +51,8 @@
     CCDirector * director = [CCDirector sharedDirector];
     [HEROAPP.navController pushViewController:director
                                      animated:YES];
+    
+    [director reshapeProjection:HEROAPP.navController.view.bounds.size];
+    [director replaceScene:[HeroBattleFieldScene node]];
 }
 @end

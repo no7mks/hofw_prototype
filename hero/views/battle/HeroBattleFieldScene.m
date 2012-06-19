@@ -14,7 +14,7 @@
 {
     if (self = [super init])
     {
-        CCLayerColor *layer = [CCLayerColor layerWithColor:ccc4(255, 0, 0, 255)];
+        CCLayerColor *layer = [CCLayerColor layerWithColor:ccc4(0, 180, 0, 255)];
         [self addChild:layer];
     }
     return self;

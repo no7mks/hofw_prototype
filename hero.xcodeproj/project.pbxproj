@@ -134,6 +134,25 @@
 		A6D17A2715906D5F008277C2 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A2515906D5F008277C2 /* HomeScreenViewController.m */; };
 		A6D17A2815906D5F008277C2 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D17A2615906D5F008277C2 /* HomeScreenViewController.xib */; };
 		A6D17A2A159075F1008277C2 /* HomeScreenViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D17A29159075F1008277C2 /* HomeScreenViewController~ipad.xib */; };
+		A6D17A3715907E14008277C2 /* hero_battle_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A3215907E14008277C2 /* hero_battle_action.cpp */; };
+		A6D17A3815907E14008277C2 /* hero_battle_round.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A3515907E14008277C2 /* hero_battle_round.cpp */; };
+		A6D17A3E15907E2F008277C2 /* HeroBattleFieldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A3D15907E2F008277C2 /* HeroBattleFieldScene.m */; };
+		A6D17A4915907E80008277C2 /* alarm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A4115907E80008277C2 /* alarm.cpp */; };
+		A6D17A4A15907E80008277C2 /* exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A4315907E80008277C2 /* exception.cpp */; };
+		A6D17A4B15907E80008277C2 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A4515907E80008277C2 /* log.cpp */; };
+		A6D17A4C15907E80008277C2 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A4715907E80008277C2 /* types.cpp */; };
+		A6D17A6115907E8D008277C2 /* any.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A4E15907E8D008277C2 /* any.cpp */; };
+		A6D17A6215907E8D008277C2 /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A5015907E8D008277C2 /* buffer.cpp */; };
+		A6D17A6315907E8D008277C2 /* config_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A5215907E8D008277C2 /* config_reader.cpp */; };
+		A6D17A6415907E8D008277C2 /* config_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A5415907E8D008277C2 /* config_writer.cpp */; };
+		A6D17A6515907E8D008277C2 /* data_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A5615907E8D008277C2 /* data_queue.cpp */; };
+		A6D17A6615907E8D008277C2 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A5815907E8D008277C2 /* md5.cpp */; };
+		A6D17A6715907E8D008277C2 /* rc4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A5A15907E8D008277C2 /* rc4.cpp */; };
+		A6D17A6815907E8D008277C2 /* shared_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A5C15907E8D008277C2 /* shared_queue.cpp */; };
+		A6D17A6915907E8D008277C2 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A5F15907E8D008277C2 /* utils.cpp */; };
+		A6D17A6D1590828B008277C2 /* HeroMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A6C1590828B008277C2 /* HeroMemory.m */; };
+		A6D17A71159082C0008277C2 /* HeroBattleField.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A70159082C0008277C2 /* HeroBattleField.m */; };
+		A6D17A7515908315008277C2 /* HeroBattleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A7415908315008277C2 /* HeroBattleManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -400,6 +419,46 @@
 		A6D17A2515906D5F008277C2 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
 		A6D17A2615906D5F008277C2 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		A6D17A29159075F1008277C2 /* HomeScreenViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HomeScreenViewController~ipad.xib"; sourceTree = "<group>"; };
+		A6D17A3215907E14008277C2 /* hero_battle_action.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hero_battle_action.cpp; path = src/hero_battle_action.cpp; sourceTree = "<group>"; };
+		A6D17A3315907E14008277C2 /* hero_battle_action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hero_battle_action.h; path = src/hero_battle_action.h; sourceTree = "<group>"; };
+		A6D17A3415907E14008277C2 /* hero_battle_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hero_battle_defines.h; path = src/hero_battle_defines.h; sourceTree = "<group>"; };
+		A6D17A3515907E14008277C2 /* hero_battle_round.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hero_battle_round.cpp; path = src/hero_battle_round.cpp; sourceTree = "<group>"; };
+		A6D17A3615907E14008277C2 /* hero_battle_round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hero_battle_round.h; path = src/hero_battle_round.h; sourceTree = "<group>"; };
+		A6D17A3C15907E2F008277C2 /* HeroBattleFieldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroBattleFieldScene.h; sourceTree = "<group>"; };
+		A6D17A3D15907E2F008277C2 /* HeroBattleFieldScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroBattleFieldScene.m; sourceTree = "<group>"; };
+		A6D17A4115907E80008277C2 /* alarm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = alarm.cpp; sourceTree = "<group>"; };
+		A6D17A4215907E80008277C2 /* alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alarm.h; sourceTree = "<group>"; };
+		A6D17A4315907E80008277C2 /* exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exception.cpp; sourceTree = "<group>"; };
+		A6D17A4415907E80008277C2 /* exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exception.h; sourceTree = "<group>"; };
+		A6D17A4515907E80008277C2 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
+		A6D17A4615907E80008277C2 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		A6D17A4715907E80008277C2 /* types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = types.cpp; sourceTree = "<group>"; };
+		A6D17A4815907E80008277C2 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		A6D17A4E15907E8D008277C2 /* any.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = any.cpp; sourceTree = "<group>"; };
+		A6D17A4F15907E8D008277C2 /* any.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = any.h; sourceTree = "<group>"; };
+		A6D17A5015907E8D008277C2 /* buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buffer.cpp; sourceTree = "<group>"; };
+		A6D17A5115907E8D008277C2 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		A6D17A5215907E8D008277C2 /* config_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = config_reader.cpp; sourceTree = "<group>"; };
+		A6D17A5315907E8D008277C2 /* config_reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_reader.h; sourceTree = "<group>"; };
+		A6D17A5415907E8D008277C2 /* config_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = config_writer.cpp; sourceTree = "<group>"; };
+		A6D17A5515907E8D008277C2 /* config_writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_writer.h; sourceTree = "<group>"; };
+		A6D17A5615907E8D008277C2 /* data_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = data_queue.cpp; sourceTree = "<group>"; };
+		A6D17A5715907E8D008277C2 /* data_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_queue.h; sourceTree = "<group>"; };
+		A6D17A5815907E8D008277C2 /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = md5.cpp; sourceTree = "<group>"; };
+		A6D17A5915907E8D008277C2 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		A6D17A5A15907E8D008277C2 /* rc4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rc4.cpp; sourceTree = "<group>"; };
+		A6D17A5B15907E8D008277C2 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		A6D17A5C15907E8D008277C2 /* shared_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shared_queue.cpp; sourceTree = "<group>"; };
+		A6D17A5D15907E8D008277C2 /* shared_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shared_queue.h; sourceTree = "<group>"; };
+		A6D17A5E15907E8D008277C2 /* singleton_template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleton_template.h; sourceTree = "<group>"; };
+		A6D17A5F15907E8D008277C2 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		A6D17A6015907E8D008277C2 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		A6D17A6B1590828B008277C2 /* HeroMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroMemory.h; path = memory/HeroMemory.h; sourceTree = "<group>"; };
+		A6D17A6C1590828B008277C2 /* HeroMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeroMemory.m; path = memory/HeroMemory.m; sourceTree = "<group>"; };
+		A6D17A6F159082C0008277C2 /* HeroBattleField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroBattleField.h; path = models/HeroBattleField.h; sourceTree = "<group>"; };
+		A6D17A70159082C0008277C2 /* HeroBattleField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeroBattleField.m; path = models/HeroBattleField.m; sourceTree = "<group>"; };
+		A6D17A7315908315008277C2 /* HeroBattleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroBattleManager.h; path = managers/HeroBattleManager.h; sourceTree = "<group>"; };
+		A6D17A7415908315008277C2 /* HeroBattleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeroBattleManager.m; path = managers/HeroBattleManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,6 +484,8 @@
 		A6D17882159064B9008277C2 = {
 			isa = PBXGroup;
 			children = (
+				A6D17A3F15907E72008277C2 /* cpplib */,
+				A6D17A2F15907E14008277C2 /* shared */,
 				A6D178A3159064B9008277C2 /* hero */,
 				A6D17890159064B9008277C2 /* Frameworks */,
 				A6D1788E159064B9008277C2 /* Products */,
@@ -458,6 +519,10 @@
 		A6D178A3159064B9008277C2 /* hero */ = {
 			isa = PBXGroup;
 			children = (
+				A6D17A6E159082A9008277C2 /* models */,
+				A6D17A6A15908263008277C2 /* memory */,
+				A6D17A72159082FF008277C2 /* managers */,
+				A6D17A3A15907E2F008277C2 /* views */,
 				A6D17A19159064BB008277C2 /* AppDelegate.h */,
 				A6D17A1A159064BB008277C2 /* AppDelegate.m */,
 				A6D17A1C159064BB008277C2 /* HelloWorldLayer.h */,
@@ -835,6 +900,122 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A6D17A2F15907E14008277C2 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A3015907E14008277C2 /* battle */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		A6D17A3015907E14008277C2 /* battle */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A3215907E14008277C2 /* hero_battle_action.cpp */,
+				A6D17A3315907E14008277C2 /* hero_battle_action.h */,
+				A6D17A3415907E14008277C2 /* hero_battle_defines.h */,
+				A6D17A3515907E14008277C2 /* hero_battle_round.cpp */,
+				A6D17A3615907E14008277C2 /* hero_battle_round.h */,
+			);
+			path = battle;
+			sourceTree = "<group>";
+		};
+		A6D17A3A15907E2F008277C2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A3B15907E2F008277C2 /* battle */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A6D17A3B15907E2F008277C2 /* battle */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A3C15907E2F008277C2 /* HeroBattleFieldScene.h */,
+				A6D17A3D15907E2F008277C2 /* HeroBattleFieldScene.m */,
+			);
+			path = battle;
+			sourceTree = "<group>";
+		};
+		A6D17A3F15907E72008277C2 /* cpplib */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A4D15907E8D008277C2 /* utils */,
+				A6D17A4015907E80008277C2 /* common */,
+			);
+			name = cpplib;
+			sourceTree = "<group>";
+		};
+		A6D17A4015907E80008277C2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A4115907E80008277C2 /* alarm.cpp */,
+				A6D17A4215907E80008277C2 /* alarm.h */,
+				A6D17A4315907E80008277C2 /* exception.cpp */,
+				A6D17A4415907E80008277C2 /* exception.h */,
+				A6D17A4515907E80008277C2 /* log.cpp */,
+				A6D17A4615907E80008277C2 /* log.h */,
+				A6D17A4715907E80008277C2 /* types.cpp */,
+				A6D17A4815907E80008277C2 /* types.h */,
+			);
+			name = common;
+			path = ../highmoon/cpplib/common/src;
+			sourceTree = "<group>";
+		};
+		A6D17A4D15907E8D008277C2 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A4E15907E8D008277C2 /* any.cpp */,
+				A6D17A4F15907E8D008277C2 /* any.h */,
+				A6D17A5015907E8D008277C2 /* buffer.cpp */,
+				A6D17A5115907E8D008277C2 /* buffer.h */,
+				A6D17A5215907E8D008277C2 /* config_reader.cpp */,
+				A6D17A5315907E8D008277C2 /* config_reader.h */,
+				A6D17A5415907E8D008277C2 /* config_writer.cpp */,
+				A6D17A5515907E8D008277C2 /* config_writer.h */,
+				A6D17A5615907E8D008277C2 /* data_queue.cpp */,
+				A6D17A5715907E8D008277C2 /* data_queue.h */,
+				A6D17A5815907E8D008277C2 /* md5.cpp */,
+				A6D17A5915907E8D008277C2 /* md5.h */,
+				A6D17A5A15907E8D008277C2 /* rc4.cpp */,
+				A6D17A5B15907E8D008277C2 /* rc4.h */,
+				A6D17A5C15907E8D008277C2 /* shared_queue.cpp */,
+				A6D17A5D15907E8D008277C2 /* shared_queue.h */,
+				A6D17A5E15907E8D008277C2 /* singleton_template.h */,
+				A6D17A5F15907E8D008277C2 /* utils.cpp */,
+				A6D17A6015907E8D008277C2 /* utils.h */,
+			);
+			name = utils;
+			path = ../highmoon/cpplib/utils/src;
+			sourceTree = "<group>";
+		};
+		A6D17A6A15908263008277C2 /* memory */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A6B1590828B008277C2 /* HeroMemory.h */,
+				A6D17A6C1590828B008277C2 /* HeroMemory.m */,
+			);
+			name = memory;
+			sourceTree = "<group>";
+		};
+		A6D17A6E159082A9008277C2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A6F159082C0008277C2 /* HeroBattleField.h */,
+				A6D17A70159082C0008277C2 /* HeroBattleField.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		A6D17A72159082FF008277C2 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A7315908315008277C2 /* HeroBattleManager.h */,
+				A6D17A7415908315008277C2 /* HeroBattleManager.m */,
+			);
+			name = managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1014,6 +1195,25 @@
 				A6D17A1B159064BB008277C2 /* AppDelegate.m in Sources */,
 				A6D17A1E159064BB008277C2 /* HelloWorldLayer.m in Sources */,
 				A6D17A2715906D5F008277C2 /* HomeScreenViewController.m in Sources */,
+				A6D17A3715907E14008277C2 /* hero_battle_action.cpp in Sources */,
+				A6D17A3815907E14008277C2 /* hero_battle_round.cpp in Sources */,
+				A6D17A3E15907E2F008277C2 /* HeroBattleFieldScene.m in Sources */,
+				A6D17A4915907E80008277C2 /* alarm.cpp in Sources */,
+				A6D17A4A15907E80008277C2 /* exception.cpp in Sources */,
+				A6D17A4B15907E80008277C2 /* log.cpp in Sources */,
+				A6D17A4C15907E80008277C2 /* types.cpp in Sources */,
+				A6D17A6115907E8D008277C2 /* any.cpp in Sources */,
+				A6D17A6215907E8D008277C2 /* buffer.cpp in Sources */,
+				A6D17A6315907E8D008277C2 /* config_reader.cpp in Sources */,
+				A6D17A6415907E8D008277C2 /* config_writer.cpp in Sources */,
+				A6D17A6515907E8D008277C2 /* data_queue.cpp in Sources */,
+				A6D17A6615907E8D008277C2 /* md5.cpp in Sources */,
+				A6D17A6715907E8D008277C2 /* rc4.cpp in Sources */,
+				A6D17A6815907E8D008277C2 /* shared_queue.cpp in Sources */,
+				A6D17A6915907E8D008277C2 /* utils.cpp in Sources */,
+				A6D17A6D1590828B008277C2 /* HeroMemory.m in Sources */,
+				A6D17A71159082C0008277C2 /* HeroBattleField.m in Sources */,
+				A6D17A7515908315008277C2 /* HeroBattleManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,6 +1317,7 @@
 				A6D17A23159064BB008277C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

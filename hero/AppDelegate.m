@@ -63,7 +63,7 @@
     _homeController = [[HomeScreenViewController alloc] initWithNibName:nil bundle:nil];
     
 	navController_ = [[UINavigationController alloc] initWithRootViewController:_homeController];
-	navController_.navigationBarHidden = NO;
+	navController_.navigationBarHidden = YES;
 
 	// set the Navigation Controller as the root view controller
 //	[window_ setRootViewController:rootViewController_];
@@ -92,6 +92,7 @@
 
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
 	[director_ pushScene: [HelloWorldLayer scene]]; 
+
     
 //    UIButton * button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 //    [button addTarget:self action:@selector(onTapped1) forControlEvents:UIControlEventTouchUpInside];
