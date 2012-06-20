@@ -136,7 +136,7 @@
 		A6D17A2A159075F1008277C2 /* HomeScreenViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D17A29159075F1008277C2 /* HomeScreenViewController~ipad.xib */; };
 		A6D17A3715907E14008277C2 /* hero_battle_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A3215907E14008277C2 /* hero_battle_action.cpp */; };
 		A6D17A3815907E14008277C2 /* hero_battle_round.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A3515907E14008277C2 /* hero_battle_round.cpp */; };
-		A6D17A3E15907E2F008277C2 /* HeroBattleFieldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A3D15907E2F008277C2 /* HeroBattleFieldScene.m */; };
+		A6D17A3E15907E2F008277C2 /* HeroBattleFieldScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A3D15907E2F008277C2 /* HeroBattleFieldScene.mm */; };
 		A6D17A4915907E80008277C2 /* alarm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A4115907E80008277C2 /* alarm.cpp */; };
 		A6D17A4A15907E80008277C2 /* exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A4315907E80008277C2 /* exception.cpp */; };
 		A6D17A4B15907E80008277C2 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A4515907E80008277C2 /* log.cpp */; };
@@ -152,7 +152,11 @@
 		A6D17A6915907E8D008277C2 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A5F15907E8D008277C2 /* utils.cpp */; };
 		A6D17A6D1590828B008277C2 /* HeroMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A6C1590828B008277C2 /* HeroMemory.m */; };
 		A6D17A71159082C0008277C2 /* HeroBattleField.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A70159082C0008277C2 /* HeroBattleField.m */; };
-		A6D17A7515908315008277C2 /* HeroBattleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A7415908315008277C2 /* HeroBattleManager.m */; };
+		A6D17A7515908315008277C2 /* HeroBattleManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A7415908315008277C2 /* HeroBattleManager.mm */; };
+		A6D17A781591A164008277C2 /* HeroBattleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A771591A164008277C2 /* HeroBattleAction.m */; };
+		A6D17A841591BF89008277C2 /* astar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A821591BF89008277C2 /* astar.cpp */; };
+		A6D17A891591C0B0008277C2 /* hero_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A881591C0B0008277C2 /* hero_map.cpp */; };
+		A6D17A8D1591C6F6008277C2 /* HeroLocalMapScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6D17A8C1591C6F6008277C2 /* HeroLocalMapScene.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -425,7 +429,7 @@
 		A6D17A3515907E14008277C2 /* hero_battle_round.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hero_battle_round.cpp; path = src/hero_battle_round.cpp; sourceTree = "<group>"; };
 		A6D17A3615907E14008277C2 /* hero_battle_round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hero_battle_round.h; path = src/hero_battle_round.h; sourceTree = "<group>"; };
 		A6D17A3C15907E2F008277C2 /* HeroBattleFieldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroBattleFieldScene.h; sourceTree = "<group>"; };
-		A6D17A3D15907E2F008277C2 /* HeroBattleFieldScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroBattleFieldScene.m; sourceTree = "<group>"; };
+		A6D17A3D15907E2F008277C2 /* HeroBattleFieldScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HeroBattleFieldScene.mm; sourceTree = "<group>"; };
 		A6D17A4115907E80008277C2 /* alarm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = alarm.cpp; sourceTree = "<group>"; };
 		A6D17A4215907E80008277C2 /* alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alarm.h; sourceTree = "<group>"; };
 		A6D17A4315907E80008277C2 /* exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exception.cpp; sourceTree = "<group>"; };
@@ -458,7 +462,16 @@
 		A6D17A6F159082C0008277C2 /* HeroBattleField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroBattleField.h; path = models/HeroBattleField.h; sourceTree = "<group>"; };
 		A6D17A70159082C0008277C2 /* HeroBattleField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeroBattleField.m; path = models/HeroBattleField.m; sourceTree = "<group>"; };
 		A6D17A7315908315008277C2 /* HeroBattleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroBattleManager.h; path = managers/HeroBattleManager.h; sourceTree = "<group>"; };
-		A6D17A7415908315008277C2 /* HeroBattleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeroBattleManager.m; path = managers/HeroBattleManager.m; sourceTree = "<group>"; };
+		A6D17A7415908315008277C2 /* HeroBattleManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HeroBattleManager.mm; path = managers/HeroBattleManager.mm; sourceTree = "<group>"; };
+		A6D17A761591A164008277C2 /* HeroBattleAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroBattleAction.h; path = models/HeroBattleAction.h; sourceTree = "<group>"; };
+		A6D17A771591A164008277C2 /* HeroBattleAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeroBattleAction.m; path = models/HeroBattleAction.m; sourceTree = "<group>"; };
+		A6D17A791591A6D7008277C2 /* HeroNotificationDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeroNotificationDefines.h; sourceTree = "<group>"; };
+		A6D17A821591BF89008277C2 /* astar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = astar.cpp; sourceTree = "<group>"; };
+		A6D17A831591BF89008277C2 /* astar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = astar.h; sourceTree = "<group>"; };
+		A6D17A871591C075008277C2 /* hero_map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hero_map.h; sourceTree = "<group>"; };
+		A6D17A881591C0B0008277C2 /* hero_map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hero_map.cpp; sourceTree = "<group>"; };
+		A6D17A8B1591C6F6008277C2 /* HeroLocalMapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeroLocalMapScene.h; path = map/HeroLocalMapScene.h; sourceTree = "<group>"; };
+		A6D17A8C1591C6F6008277C2 /* HeroLocalMapScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HeroLocalMapScene.mm; path = map/HeroLocalMapScene.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -527,6 +540,7 @@
 				A6D17A1A159064BB008277C2 /* AppDelegate.m */,
 				A6D17A1C159064BB008277C2 /* HelloWorldLayer.h */,
 				A6D17A1D159064BB008277C2 /* HelloWorldLayer.m */,
+				A6D17A791591A6D7008277C2 /* HeroNotificationDefines.h */,
 				A6D178A4159064B9008277C2 /* Resources */,
 				A6D178BC159064B9008277C2 /* libs */,
 				A6D17A15159064BB008277C2 /* Supporting Files */,
@@ -903,6 +917,7 @@
 		A6D17A2F15907E14008277C2 /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				A6D17A861591C058008277C2 /* map */,
 				A6D17A3015907E14008277C2 /* battle */,
 			);
 			path = shared;
@@ -923,6 +938,7 @@
 		A6D17A3A15907E2F008277C2 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				A6D17A8A1591C59A008277C2 /* map */,
 				A6D17A3B15907E2F008277C2 /* battle */,
 			);
 			path = views;
@@ -932,7 +948,7 @@
 			isa = PBXGroup;
 			children = (
 				A6D17A3C15907E2F008277C2 /* HeroBattleFieldScene.h */,
-				A6D17A3D15907E2F008277C2 /* HeroBattleFieldScene.m */,
+				A6D17A3D15907E2F008277C2 /* HeroBattleFieldScene.mm */,
 			);
 			path = battle;
 			sourceTree = "<group>";
@@ -940,6 +956,7 @@
 		A6D17A3F15907E72008277C2 /* cpplib */ = {
 			isa = PBXGroup;
 			children = (
+				A6D17A811591BF89008277C2 /* ai */,
 				A6D17A4D15907E8D008277C2 /* utils */,
 				A6D17A4015907E80008277C2 /* common */,
 			);
@@ -1003,6 +1020,8 @@
 			children = (
 				A6D17A6F159082C0008277C2 /* HeroBattleField.h */,
 				A6D17A70159082C0008277C2 /* HeroBattleField.m */,
+				A6D17A761591A164008277C2 /* HeroBattleAction.h */,
+				A6D17A771591A164008277C2 /* HeroBattleAction.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -1011,9 +1030,38 @@
 			isa = PBXGroup;
 			children = (
 				A6D17A7315908315008277C2 /* HeroBattleManager.h */,
-				A6D17A7415908315008277C2 /* HeroBattleManager.m */,
+				A6D17A7415908315008277C2 /* HeroBattleManager.mm */,
 			);
 			name = managers;
+			sourceTree = "<group>";
+		};
+		A6D17A811591BF89008277C2 /* ai */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A821591BF89008277C2 /* astar.cpp */,
+				A6D17A831591BF89008277C2 /* astar.h */,
+			);
+			name = ai;
+			path = ../highmoon/cpplib/ai/src;
+			sourceTree = "<group>";
+		};
+		A6D17A861591C058008277C2 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A871591C075008277C2 /* hero_map.h */,
+				A6D17A881591C0B0008277C2 /* hero_map.cpp */,
+			);
+			name = map;
+			path = map/src;
+			sourceTree = "<group>";
+		};
+		A6D17A8A1591C59A008277C2 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				A6D17A8B1591C6F6008277C2 /* HeroLocalMapScene.h */,
+				A6D17A8C1591C6F6008277C2 /* HeroLocalMapScene.mm */,
+			);
+			name = map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1197,7 +1245,7 @@
 				A6D17A2715906D5F008277C2 /* HomeScreenViewController.m in Sources */,
 				A6D17A3715907E14008277C2 /* hero_battle_action.cpp in Sources */,
 				A6D17A3815907E14008277C2 /* hero_battle_round.cpp in Sources */,
-				A6D17A3E15907E2F008277C2 /* HeroBattleFieldScene.m in Sources */,
+				A6D17A3E15907E2F008277C2 /* HeroBattleFieldScene.mm in Sources */,
 				A6D17A4915907E80008277C2 /* alarm.cpp in Sources */,
 				A6D17A4A15907E80008277C2 /* exception.cpp in Sources */,
 				A6D17A4B15907E80008277C2 /* log.cpp in Sources */,
@@ -1213,7 +1261,11 @@
 				A6D17A6915907E8D008277C2 /* utils.cpp in Sources */,
 				A6D17A6D1590828B008277C2 /* HeroMemory.m in Sources */,
 				A6D17A71159082C0008277C2 /* HeroBattleField.m in Sources */,
-				A6D17A7515908315008277C2 /* HeroBattleManager.m in Sources */,
+				A6D17A7515908315008277C2 /* HeroBattleManager.mm in Sources */,
+				A6D17A781591A164008277C2 /* HeroBattleAction.m in Sources */,
+				A6D17A841591BF89008277C2 /* astar.cpp in Sources */,
+				A6D17A891591C0B0008277C2 /* hero_map.cpp in Sources */,
+				A6D17A8D1591C6F6008277C2 /* HeroLocalMapScene.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

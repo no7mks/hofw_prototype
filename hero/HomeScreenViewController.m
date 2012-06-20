@@ -11,6 +11,7 @@
 
 
 #import "HeroBattleFieldScene.h"
+#import "HeroLocalMapScene.h"
 
 @interface HomeScreenViewController ()
 
@@ -54,5 +55,15 @@
     
     [director reshapeProjection:HEROAPP.navController.view.bounds.size];
     [director replaceScene:[HeroBattleFieldScene node]];
+}
+
+- (void)onMapTapped:(id)sender
+{
+    CCDirector * director = [CCDirector sharedDirector];
+    [HEROAPP.navController pushViewController:director
+                                     animated:YES];
+    
+    [director reshapeProjection:HEROAPP.navController.view.bounds.size];
+    [director replaceScene:[HeroLocalMapScene node]];
 }
 @end

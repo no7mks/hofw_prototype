@@ -12,6 +12,9 @@
 + (HeroBattleManager *)sharedInstance;
 
 
+- (void)startBattle;
+- (void)endBattle;
+
 @end
 
 #define BATTLE_MAN ([HeroBattleManager sharedInstance])

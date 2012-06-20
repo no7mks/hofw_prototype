@@ -7,10 +7,17 @@
 //
 
 #import "HeroBattleManager.h"
+
+#import "HeroNotificationDefines.h"
+
+#import "HeroBattleFieldScene.h"
+
 @interface HeroBattleManager ()
-- (void)onFrameTicked;
 @end
+
 @implementation HeroBattleManager
+{
+}
 
 + (HeroBattleManager *)sharedInstance
 {
@@ -22,21 +29,22 @@
     return s;
 }
 
+
 - (id)init
 {
     if (self = [super init])
     {
-        [NSTimer scheduledTimerWithTimeInterval:0.1f
-                                         target:self
-                                       selector:@selector(onFrameTicked)
-                                       userInfo:nil
-                                        repeats:YES];
         
     }
     return self;
 }
 
-- (void)onFrameTicked
+- (void)startBattle
+{
+    
+}
+
+- (void)endBattle
 {
     
 }

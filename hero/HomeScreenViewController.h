@@ -11,4 +11,5 @@
 @interface HomeScreenViewController : UIViewController
 
 - (IBAction)onBFTapped:(id)sender;
+- (IBAction)onMapTapped:(id)sender;
 @end
